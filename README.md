@@ -13,7 +13,7 @@ NOTE: StateA.java, StateB.java, StateC.java, and ButtonAContext.java are samples
 
 Update notes will be included in this ReadMe file for easy reference.
 
-###11/15/17 Update
+### 11/15/17 Update
 - Renamed StateTester class to StateDemo to more accurately indicate that this is a demonstration of how the provided State pattern can be implemented.
 - Changed ButtonContext.buttonState visibility to protected and removed redundant class variable ButtonAContext.buttonState.
 - Provided default functionality in ButtonContext methods and removed abstract designation.
