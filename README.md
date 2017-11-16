@@ -20,9 +20,6 @@ Update notes will be included in this ReadMe file for easy reference.
 - Updated javadoc and readme to reflect these changes.
 
 **10/31/17 Update**
-
-Made changes per feedback:
-
 - Created source folder structure to reflect package structure.
 - Added Javadoc for all classes.
 - ButtonContext constructor changed to protected and to require an initial state.
