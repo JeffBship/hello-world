@@ -1,14 +1,13 @@
 # Button Interface
-###CS505 Fall17 Group1: 
+### CS505 Fall17 Group1: <br>
 Emily Park, Jeffrey Blankenship, Cecelia Oluwadoyinsola, James Luczynski, Melissa Mulcahy <br>
 
 -----
 Usage
 -----
 
-  This is a java interface for usage with the button device that connects to
-the Raspberry Pi.  It follows a state design pattern and is customizable for most
-desired uses.
+This is a java interface for usage with the button device that connects to
+the Raspberry Pi.  It follows a state design pattern and is customizable for most  desired uses.
 
 NOTE: StateA.java, StateB.java, StateC.java, and ButtonAContext.java are samples on how to utilize the abstract class and interface provided. StateDemo.java demonstrates a way to implement this.
 
