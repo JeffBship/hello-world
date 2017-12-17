@@ -15,9 +15,9 @@ Within the newly created class include the code for the action desired for any o
 ### Package grovepi.observer
 
 This package provides the tools used to create the invokers.  
-**InputSensorReader**: Provides a common set of control methods and class variables for subclasses.
+* **InputSensorReader**: Provides a common set of control methods and class variables for subclasses.
 
-**DigitalInputReader (extends InputSensorReader)**: Reads sensor data from a GrovePi digital sensor and updates an observed with this data.
+* **DigitalInputReader (extends InputSensorReader)**: Reads sensor data from a GrovePi digital sensor and updates an observed with this data.
 
 **AnalogInputReader (extends InputSensorReader)**:  An instance of this class reads sensor data from a GrovePi analog sensor and updates an observer with this data.
 
