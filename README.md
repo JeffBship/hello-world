@@ -2,23 +2,18 @@
 
 ### GrovePi sensors implemented using Java
 
-This project is an example of how GrovePi libraries can be used in a Java apppication which interacts with GrovePi sensors, specifically the button and rotary used in this project.  The GrovePi.observer package has been written in a way to provide a framework where these classes can be extended to use other sensors as needed.
+This project is an example of how GrovePi libraries can be used in a Java application which interacts with GrovePi sensors, specifically the button and rotary used in this project.  The GrovePi.observer package has been written in a way to provide a framework where these classes can be extended to use other sensors as needed.
 
 **ButtonRotaryDemo** provides an example of a client class interacting with the observer package.  
 
-For each button or rotary sensor that is desired,  the developer must implement an invoker interface (either implements ButtonInvoker or implements RotaryInvoker).  Within the newly created class include the code for the action desired for any of the button/rotary events.
+For each button or rotary sensor that is desired, the developer must implement an invoker interface (either implements ButtonInvoker or implements RotaryInvoker).  Within the newly created class include the code for the action desired for any of the button/rotary events.
 
 Invokers
  * **SamplebuttonInvoker**: Provides specific code to be executed when a single, double, or long press is invoked.  In this example it simply prints a message to the console.
  * **SampleRotaryInvoker**: Provides code to be executed when a change is detected in the position of the rotary sensor.  In this example a filter is applied such that minimum difference of SampleRotaryInvoker.tolerance is required to trigger a display.  Also, the output is formatted for single decimal place display.
 
-Once an invoker is emplemented, the next step is to code a driver that uses the invoker.  In this example, 
+Once an invoker is implemented, the next step is to code a driver that uses the invoker.  In this example, 
 **ButtonRotaryDemo.java**: Instantiates invokers, assigns invokers to sensors and pins and starts reading the sensors. 
-
-
-
-
-
 
 ### Package grovepi.observer
 
@@ -31,17 +26,16 @@ This package provides the tools used to create the invokers.
 
 * **InputSensorObserver**: Provides the interface that all concrete InputSensorObservers must implement.
 
-  * **ButtonPressDistinguisher (implements InputSensorObserver)**: Recieves updates containing sensor events, analyzes the timing of these events and invokes the appropriate method on this instance's ButtonInvoker object.
+  * **ButtonPressDistinguisher (implements InputSensorObserver)**: Receives updates containing sensor events, analyzes the timing of these events and invokes the appropriate method on this instance's ButtonInvoker object.
 
   * **RotaryAngleDeterminer (implements InputSensorObserver)**: Determines and reports the angular position of the rotary angle sensor.  
 * **Interfaces**:
   * **ButtonInvoker**: Declares the methods that are called when ButtonPressDistinguisher identifies a single, double, and long press respectively.
   * **RotaryInvoker**: Declares a method to call when RotaryAngleDenterminer is updated.
-
-
+  
 ### Credits
 
-This GrovePi sensor demonstration is extensin of coursework for CS505 Design Patterns at Central Connecticut State University,
+This GrovePi sensor demonstration is an extension of coursework for CS505 Design Patterns at Central Connecticut State University,
 Fall 2017, with Dr. Chad Williams.
 
 Interested in Computer Science at CCSU?:  http://www.ccsu.edu/cs/
@@ -55,7 +49,7 @@ Interested in Computer Science at CCSU?:  http://www.ccsu.edu/cs/
 The MIT License (MIT)
 
 GrovePi for the Raspberry Pi: an open source platform for connecting Grove Sensors to the Raspberry Pi.
-Copyright (C) 2017  Dexter Industries
+Copyright (C) 2017 Dexter Industries
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
