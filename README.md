@@ -10,24 +10,25 @@ The GrovePi is compatible with the Raspberry Pi models A, A+, B, B+, 2, and 3.
 Getting started is easy. Check out our Getting Started With GrovePi Guide [here](http://www.dexterindustries.com/GrovePi/get-started-with-the-grovepi/). 
 We have an extensive library that covers most Grove sensors. You can find it on the Github repo.  You won’t need to hack much at all with our library: get started coding in Python and C now! 
 
-### Quick Install
-In order to quick install the `GrovePi` repository, open up a terminal and type the following command:
-```
-sudo curl -kL dexterindustries.com/update_grovepi | bash
-```
-The same command can be used for updating the `GrovePi` to the latest version.
+### ButtonRotaryDemo.java
 
-### Want to use a sensor not in the library yet?  
-Ask us in the [forums](http://forum.dexterindustries.com/c/grovepi).  Want to use the GrovePi in a language not currently supported? [Ask and we will help](http://forum.dexterindustries.com/c/grovepi).
+ButtonRotaryDemo provides an example of a client class interacting with the observer package.  For each sensor that is desired,
+the developer must create an implementation of an invoker interface (either implements ButtonInvoker or implements RotaryInvoker).
+Within the newly created class include the code for the action desired for any of the button/rotary events.
 
-### Programming the GrovePi
-The GrovePi can be programmed in Python, C, C#, Go, and NodeJS on the Raspberry Pi.  Simply start with one of our [example projects](http://www.dexterindustries.com/GrovePi/projects-for-the-raspberry-pi/) or [example code](https://github.com/DexterInd/GrovePi/tree/master/Software).  
-The GrovePi uses an Arduino to interface between the Raspberry Pi and the Grove Sensors, and comes programmed with a standard firmware.  The firmware can be rewritten from the Raspberry Pi.  
 
-### Getting Help
-Need help? We [have a forum here where you can ask questions or make suggestions](http://www.dexterindustries.com/GrovePi/projects-for-the-raspberry-pi/).
 
-See more at the [GrovePi Site](http://dexterindustries.com/GrovePi/)
+
+
+### Credits
+
+This GrovePi sensor demonstration is part of a coursework project
+for CS505 Design Patterns at Central Connecticut State University,
+Fall 2017, with Dr. Chad Williams.
+Interested in Computer Science at CCSU?:  http://www.ccsu.edu/cs/
+
+@author James Luczynski
+@author Jeff Blankenship
 
 ## License
 
