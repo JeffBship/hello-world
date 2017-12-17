@@ -16,14 +16,19 @@ Within the newly created class include the code for the action desired for any o
 
 This package provides the tools used to create the invokers.  
 **InputSensorReader**: Provides a common set of control methods and class variables for subclasses.
+
 **DigitalInputReader (extends InputSensorReader)**: Reads sensor data from a GrovePi digital sensor and updates an observed with this data.
+
 **AnalogInputReader (extends InputSensorReader)**:  An instance of this class reads sensor data from a GrovePi analog sensor and updates an observer with this data.
 
 **InputSensorObserver**: Provides the interface that all concrete InputSensorObservers must implement.
+
 **ButtonPressDistinguisher (implements InputSensorObserver)**: Recieves updates containing sensor events, analyzes the timing of these events and invokes the appropriate method on this instance's ButtonInvoker object.
+
 **RotaryAngleDeterminer (implements InputSensorObserver)**: Determines and reports the angular position of the rotary angle sensor.  
 
 **ButtonInvoker**: Declares the methods that are called when ButtonPressDistinguisher identifies a single, double, and long press respectively.
+
 **RotaryInvoker**: Declares a method to call when RotaryAngleDenterminer is updated.
 
 
