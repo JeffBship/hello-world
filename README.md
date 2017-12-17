@@ -25,6 +25,7 @@ Within the newly created class include the code for the action desired for any o
 This GrovePi sensor demonstration is part of a coursework project
 for CS505 Design Patterns at Central Connecticut State University,
 Fall 2017, with Dr. Chad Williams.
+
 Interested in Computer Science at CCSU?:  http://www.ccsu.edu/cs/
 
 @author James Luczynski
