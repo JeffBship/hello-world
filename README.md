@@ -5,9 +5,17 @@ This readme is NOT a final version.  Posting to see the formats.
 
 ### ButtonRotaryDemo.java
 
-ButtonRotaryDemo provides an example of a client class interacting with the observer package.  For each sensor that is desired,
-the developer must create an implementation of an invoker interface (either implements ButtonInvoker or implements RotaryInvoker).
-Within the newly created class include the code for the action desired for any of the button/rotary events.
+ButtonRotaryDemo provides an example of a client class interacting with the observer package.  
+
+For each button or rotary sensor that is desired,  the developer must implement an invoker interface (either implements ButtonInvoker or implements RotaryInvoker).  Within the newly created class include the code for the action desired for any of the button/rotary events.
+
+Invokers
+ * **SamplebuttonInvoker**: Provides specific code to be executed when a single, double, or long press is invoked.  In this example it simply prints a message to the console.
+ * **SampleRotaryInvoker**: Provides code to be executed when a change is detected in the position of the rotary sensor.  In this example a filter is applied such that minimum difference of SampleRotaryInvoker.tolerance is required to trigger a display.  Also, the output is formatted for single decimal place display.
+
+Once an invoker is emplemented, the next step is to code a driver that uses the invoker.  In this example, **ButtonRotaryDemo.java** 
+
+
 
 
 
