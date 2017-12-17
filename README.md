@@ -26,7 +26,7 @@ This package provides the tools used to create the invokers.
   * **ButtonPressDistinguisher (implements InputSensorObserver)**: Recieves updates containing sensor events, analyzes the timing of these events and invokes the appropriate method on this instance's ButtonInvoker object.
 
   * **RotaryAngleDeterminer (implements InputSensorObserver)**: Determines and reports the angular position of the rotary angle sensor.  
-*   **Interfaces**:
+* **Interfaces**:
   * **ButtonInvoker**: Declares the methods that are called when ButtonPressDistinguisher identifies a single, double, and long press respectively.
   * **RotaryInvoker**: Declares a method to call when RotaryAngleDenterminer is updated.
 
