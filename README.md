@@ -21,7 +21,7 @@ This package provides the tools used to create the invokers.
 
   * **AnalogInputReader (extends InputSensorReader)**:  An instance of this class reads sensor data from a GrovePi analog sensor and updates an observer with this data.
 
-**InputSensorObserver**: Provides the interface that all concrete InputSensorObservers must implement.
+* **InputSensorObserver**: Provides the interface that all concrete InputSensorObservers must implement.
 
   * **ButtonPressDistinguisher (implements InputSensorObserver)**: Recieves updates containing sensor events, analyzes the timing of these events and invokes the appropriate method on this instance's ButtonInvoker object.
 
