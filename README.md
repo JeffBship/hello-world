@@ -1,14 +1,7 @@
 
 
-### How Does it Work?
-The GrovePi board slips over the Raspberry Pi.  Connect the Grove Sensors to the GrovePi board.  Upload your program.  Begin taking in the worlds data!
-
-### Raspberry Pi Compatibility
-The GrovePi is compatible with the Raspberry Pi models A, A+, B, B+, 2, and 3.
-
-### Getting Started
-Getting started is easy. Check out our Getting Started With GrovePi Guide [here](http://www.dexterindustries.com/GrovePi/get-started-with-the-grovepi/). 
-We have an extensive library that covers most Grove sensors. You can find it on the Github repo.  You won’t need to hack much at all with our library: get started coding in Python and C now! 
+### Work in Progress:  
+This readme is NOT a final version.  Posting to see the formats.
 
 ### ButtonRotaryDemo.java
 
@@ -18,6 +11,23 @@ Within the newly created class include the code for the action desired for any o
 
 
 
+
+### Package grovepi.observer
+
+This package provides the tools used to create the invokers.  . 
+
+ButtonInvoker: Declares the methods that are called when ButtonPressDistinguisher identifies a single, double, and long press respectively.
+
+ButtonPressDistinguisher (implements InputSensorObserver): Recieves updates containing sensor events, analyzes the timing of these events and invokes the appropriate method on this instance's ButtonInvoker object.
+
+InputSensorObserver: Provides the interface that all concrete InputSensorObservers must implement.
+
+InputSensorReader: Provides a common set of control methods and class variables for subclasses.
+DigitalInputReader (extends InputSensorReader): Reads sensor data from a GrovePi digital sensor and updates an observed with this data.
+AnalogInputReader (extends InputSensorReader):  An instance of this class reads sensor data from a GrovePi analog sensor and updates an observer with this data.
+
+
+RotaryAngleDeterminer (implements InputSensorObserver): 
 
 
 ### Credits
@@ -29,6 +39,7 @@ Fall 2017, with Dr. Chad Williams.
 Interested in Computer Science at CCSU?:  http://www.ccsu.edu/cs/
 
 @author James Luczynski
+
 @author Jeff Blankenship
 
 ## License
